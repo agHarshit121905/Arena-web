@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Karantina", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap");
+
+/* Create a custom class to apply the Karantina font */
+@layer utilities {
+  .font-karantina {
+    font-family: "Karantina", cursive;
+  }
+}
+#animatekr {
+  animation: scroll 10s linear infinite;
+}
+#animatekr:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.gradient {
+  background: linear-gradient(
+    to right,
+    #290301 0%,
+    #540704 27%,
+    #7e0a06 55%,
+    #290301 100%
+  );
+}
